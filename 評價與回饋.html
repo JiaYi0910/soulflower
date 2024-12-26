@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>靈魂花室 SoulFlower</title>
+    <link rel="stylesheet" href="css\評價.css">
+</head>
+
+<body>
+    <a href="#top" class="scroll-to-top">
+        <div class="arrow">&#8593;</div>
+    </a>
+    <div id="top"></div>
+
+
+    <header>
+        <a href="首頁.html">
+            <img src="images\title\title整合.png" alt="靈魂花室" class="full-header-image">
+        </a>
+        <div class="image-container">
+            <img src="images\首頁\總覽.png" alt="商品總覽" class="leftimg">
+
+            <div class="lefttooltip">
+                <a href="首頁.html">
+                    <p>首頁</p>
+                </a>
+                <a href="會員登入.html">
+                    <p>會員登入</p>
+                </a>
+                <a href="商品總覽.html">
+                    <p>商品總覽</p>
+                </a>
+                <a href="購物車.html">
+                    <p>檢視購物車</p>
+                </a>
+                <a href="評價與回饋.html">
+                    <p>評價與回饋</p>
+                </a>
+                <a href="客服服務.html">
+                    <p>客服服務</p>
+                </a>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="購物車.html">
+                <img src="images\首頁\購物車.png" alt="購物車" class="centerimg">
+            </a>
+            <div class="centertooltip">購物車</div>
+        </div>
+        <div class="image-container">
+            <a href="會員登入.html">
+                <img src="images\首頁\會員.png" alt="會員資料" class="rightimg">
+            </a>
+            <div class="righttooltip">會員登入</div>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>評價與回饋</h1>
+
+        <div class="feedback-container">
+            <div class="feedback-header">
+                <p>您的意見對我們非常重要，請幫我們留下寶貴的回饋！</p>
+            </div>
+
+            <div class="rating-section" id="ratingSection">
+                <span data-value="1">&#9733;</span>
+                <span data-value="2">&#9733;</span>
+                <span data-value="3">&#9733;</span>
+                <span data-value="4">&#9733;</span>
+                <span data-value="5">&#9733;</span>
+            </div>
+
+            <div class="feedback-form">
+                <textarea id="feedbackText" placeholder="請輸入您的意見..."></textarea>
+                <button onclick="submitFeedback()">提交回饋</button>
+            </div>
+
+            <div class="thank-you-message" id="thankYouMessage">
+                感謝您的回饋！我們會繼續努力提供更好的服務。
+            </div>
+        </div>
+        <script src="js\評價.js"></script>
+    </main>
+
+    <footer>
+
+        <div class="contact-info">
+            <div class="first-part">
+                <p><img src="images\首頁\地址.png" class="contactimg">台灣 Taiwan 中原大學總店</p>
+                <p><img src="images\首頁\地址.png" class="contactimg">泰國 Thailand 曼谷店</p>
+                <p><img src="images\首頁\地址.png" class="contactimg">柬埔寨 Cambodia 金邊店</p>
+            </div>
+            <div class="second-part">
+                <p><img src="images\首頁\電話.png" class="contactimg">電話: 0904-444-4444 分機666 </p>
+                <p><img src="images\首頁\郵件.png" class="contactimg">Email: aguma444@gmail.com</p>
+            </div>
+        </div>
+
+        <img src="images\首頁\右下.png" alt="Footer Image">
+    </footer>
+</body>
+
+</html>
