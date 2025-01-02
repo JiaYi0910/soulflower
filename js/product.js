@@ -14,6 +14,36 @@ function loadCustomFont() {
 
 loadCustomFont();
 
+// 初始化按讚數量（動態管理多個商品）
+const likeCounts = {};
+
+// 初始化商品讚數
+for (let i = 1; i <= 10; i++) {
+    likeCounts[`product${i}`] = 0;
+}
+
+// 按讚功能
+function likeProduct(productId) {
+    likeCounts[productId]++;
+    document.getElementById(`like-count-${productId}`).textContent = likeCounts[productId];
+}
+
+// 提交評論功能
+function submitComment(productId) {
+    const commentInput = document.getElementById(`comment-input-${productId}`);
+    const commentList = document.getElementById(`comments-${productId}`);
+    const commentText = commentInput.value.trim();
+
+    if (commentText) {
+        const newComment = document.createElement("li");
+        newComment.textContent = commentText;
+        commentList.appendChild(newComment);
+        commentInput.value = ""; // 清空輸入框
+    } else {
+        alert("評論內容不可為空！");
+    }
+}
+
 
 // 將商品添加到購物車
 function addToCart(productId) {
